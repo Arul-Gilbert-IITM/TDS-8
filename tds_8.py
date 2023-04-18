@@ -8,15 +8,14 @@ Original file is located at
 """
 
 import streamlit as st
-
-def find_largest(num1, num2, num3):
-    largest=max(num1, num2, num3)
-    return largest
+st.title("Name: Arul Gilbert")
+st.title("Roll Number: 21F1004851")
+st.title("\n")
 st.title("Find the Largest Number:")
 num1=st.number_input("Enter the first number:")
 num2=st.number_input("Enter the second number:")
 num3=st.number_input("Enter the third number:")
 
 if st.button("Find"):
-    largest=find_largest(num1, num2, num3)
+    largest=max(num1, num2, num3)
     st.write("The largest number is:",largest)
